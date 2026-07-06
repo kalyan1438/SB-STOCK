@@ -9,7 +9,7 @@ dotenv.config();
 connectDB();
 
 const app = express();
-const allowedOrigins = (process.env.CLIENT_URL || 'http://localhost:5173')
+const allowedOrigins = (process.env.CLIENT_URL)
   .split(',')
   .map((origin) => origin.trim());
 
